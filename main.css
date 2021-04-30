@@ -39,20 +39,17 @@ body {
     align-items: center;
     flex-direction: column;
 }
+#registrationLink {
+    text-align: center;
+}
 #profile a {
-    color: #B4C7D6;
+    color: grey;
 }
 #profile a:hover {
     color: #6a8dc3;
 }
 
-.input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-}
+
 #loginAndPassword {
     width: 250px;
     display: flex;
@@ -86,6 +83,34 @@ body {
 #loginAndPassword button:hover {
     background-color: #6a8dc3;
 }
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.input#passwordInput {
+    display: flex;
+    flex-direction: column;
+}
+#passwordInput label {
+    width: 93%;
+}
+#passView {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+}
+#passView input {
+    width: 7%;
+}
+
+.passwrod-control a {
+    width: 10px;
+    height: 10px;
+}
 
 /* NAVMENU */
 
@@ -98,7 +123,7 @@ header {
     top: 0;
 }
 .content {
-    width: 100%;
+    width: 95%;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -107,6 +132,10 @@ div.navMenu  {
 }
 .navMenu .menu {
     display: none;
+    height: 50px;
+    width: 100%;
+}
+.navMenu .menu img {
     height: 50px;
     width: 50px;
 }
@@ -135,6 +164,7 @@ div.navMenu  {
     height: 100%;
     width: 16.6%;
     list-style: none;
+    flex-basis: 800px;
 }
 #navMenu a {
     height: 100%;
@@ -147,6 +177,24 @@ div.navMenu  {
 }
 #navMenu a:hover, .profile a:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#mainLink {
+    flex-shrink: 1.05;
+}
+#playLink {
+    flex-shrink: 1.05;
+}
+#prizesLink {
+    flex-shrink: 1.05;
+}
+#winnersLink {
+    flex-shrink: 1;
+}
+#bonusesLink {
+    flex-shrink: 1.05;
+}
+#contactsLink {
+    flex-shrink: 1.04;
 }
 .profile {
     height: 100%;
@@ -402,12 +450,29 @@ header .profile a {
 /* ADAPTIVE DESIGN */
 
 @media (max-width: 1030px) and (min-width: 790px){
+    .navMenu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .navMenu .menu {
+        display: block;
+        width: 7%;
+    }
+    .navMenu .menu .menuIcon {
+        display: none;
+    }
+    .navMenu .menu .profileIcon {
+        float: right;
+    }
     header .profile a {
         display: none;
     }
-    #navMenu li {
-        padding-left: 10px;
-        padding-right: 10px;
+    .navMenu .profile {
+        display: none;
+    }
+    #navMenu {
+        width: 93%;
     }
     .info {
         margin-top: 130px;
@@ -428,8 +493,25 @@ header .profile a {
     }
 }
 @media (max-width: 789px) and (min-width: 610px) {
-    #navMenu li {
-        margin-right: 5%;
+    .navMenu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navMenu .menu {
+        display: block;
+        width: 8.2%;
+    }
+    .navMenu .menu .menuIcon {
+        display: none;
+    }
+    .navMenu .menu .profileIcon {
+        float: right;
+    }
+    #navMenu {
+        width: 92.8%;
+    }
+    .navMenu .profile {
+        display: none;
     }
     header .profile a {
         display: none;
@@ -464,19 +546,15 @@ header .profile a {
     .main p {
         font-size: 14px;
     }
-    #navMenu ul {
-        display: none;
-    }
     .navMenu .menu {
         display: block;
         margin-left: 10px;
     }
-    #navMenu li {
-        width: 23%;
-        min-width: 70px;
-        margin-right: 10%;
-        padding-left: 10px;
-        text-align: center;
+    .navMenu .menu .profileIcon {
+        float: right;
+    }
+    #navMenu ul, #navMenu {
+        display: none;
     }
     .navMenu .profile {
         display: none;
@@ -501,6 +579,9 @@ header .profile a {
     .info .svg {
         display: none;
     }
+    .prizesList #itemHeader p {
+        padding: 2px;
+    }
     .winnerList .num {
         padding: 30px;
     }
@@ -510,6 +591,10 @@ header .profile a {
     }
     .prizesList {
         margin-bottom: 0;
+    }
+    .rndButton .sum p {
+        font-size: 13px;
+        padding: 2px;
     }
     .bottomcontacts h1 {
         margin-top: 20px;
@@ -526,12 +611,16 @@ header .profile a {
         min-width: 225px;
     }
 }
-//о нас опустить
-
-// розыгрыш
-// получить билет
-// призы
-// победители
-// о нас
-
-// кнопка рандома всегда на экране
+@media (max-width: 319px) and (min-width: 100px) {
+    .main {
+        display: none;
+    }
+    .menu, #navMenu, .profile {
+        display: none;
+    }
+    .navMenu {
+        display: flex;
+        background: url(images/пасхалка.png);
+        background-size: contain;
+    }
+}
