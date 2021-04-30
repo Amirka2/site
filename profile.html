@@ -22,13 +22,13 @@
 					</div>
 					<div id="loginAndPassword">
 						<div class="input">
-							<label for="userLogin">Логин:</label>
-							<input id="userLogin"> </input>
+							<input id="userLogin" placeholder="Введите логин">
 						</div>
-						<div class="input">
-							<label for="userPassword">Пароль:</label>
-							<input id="userPassword" type=password required > </input>
-						</div>
+						
+						<div class="password">
+	<input type="password" id="password-input" placeholder="Введите пароль" name="password">
+	<a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+</div>
 						<button type="submit">Войти</button>
 					</div>
 				</form>	
@@ -39,5 +39,6 @@
 		</div>
 	</div>
 	</div>
+<script src="script.js"></script>
 </body>
 </html>
