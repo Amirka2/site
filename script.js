@@ -1,6 +1,6 @@
-let popup = document.getElementById("Eugene1"),
-	popupClose = document.getElementById("closeBtn"),
-	popupInfo = document.getElementById("popupInfo");
+let popup = document.getElementsByClassName("num"),
+	popupClose = document.getElementsByClassName("closeBtn"),
+	popupInfo = document.getElementsByClassName("popupInfo");
 popup.onclick = function(){
 	popupInfo.style.display = "block";
 };
