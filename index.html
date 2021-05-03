@@ -12,15 +12,20 @@
  <header>
     <div class="content">
         <div class="navMenu">
-            <div class="menu"><img src="images/icons/menu2.svg" alt=""></div>
+            <div class="menu">
+            	<!--
+            	<a href="" class="menuIcon"><img src="images/icons/menu2.svg" alt="" class="menuIcon"></a>
+				-->
+            	<a href="profile.html" class="profileIcon"><img src="images/icons/profile.png" alt="" class="profileIcon"></a>
+            </div>
             <div id="navMenu">
                 <ul>
-                    <li><a href="index.html#info">Главное</a></li>
-                    <li><a href="index.html#getTicket">Играть</a></li>
-                    <li><a href="index.html#prizes">Призы</a></li>
-                    <li><a href="index.html#winners">Победители</a></li>
-                    <li><a href="index.html#bonuses">Бонусы</a></li>
-                    <li><a href="index.html#bottomcontacts">Контакты</a></li>
+                    <li id="mainLink"><a href="index.html#info">Главное</a></li>
+                    <li id="playLink"><a href="index.html#getTicket">Играть</a></li>
+                    <li id="prizesLink"><a href="index.html#prizes">Призы</a></li>
+                    <li id="winnersLink"><a href="index.html#winners">Победители</a></li>
+                    <li id="bonusesLink"><a href="index.html#bonuses">Бонусы</a></li>
+                    <li id="contactsLink"><a href="index.html#bottomcontacts">Контакты</a></li>
                 </ul>
             </div>
             <div class="profile"><a href="profile.html">Личный кабинет</a></div>
@@ -63,7 +68,7 @@
             	<p>Могут варьироваться в зависимости от количества билетов</p>
             	<div class="item">
                 <div class="name"><p><b>Количество билетов</b></p></div>
-                <div class="sum">
+                <div class="sum" id="itemHeader">
                 	<p><b>Выигрыш</b></p>
             	</div>
                 </div>
@@ -117,29 +122,41 @@
                 </div>
             </div>
             <div class="winnerList" id="winners">
-                <h1>Список пидорасов</h1>
+                <h1>Список победителей</h1>
                 <div class="num" id="Eugene1">
                     <h2>Женя</h2>
                     <div class="more"></div>
-                    <div id="popupInfo">
+                    <div class="popupInfo">
                     	<p>Доп инфа</p>
                     </div>
                 </div>
                 <div class="num" id="Eugene2">
                     <h2>Женя</h2>
                     <div class="more"></div>
+                    <div class="popupInfo">
+                    	<p>Доп инфа</p>
+                    </div>
                 </div>
                 <div class="num" id="Amir">
                     <h2>Амир</h2>
                     <div class="more"></div>
+                    <div class="popupInfo">
+                    	<p>Доп инфа</p>
+                    </div>
                 </div>
                 <div class="num" id="Artem">
                     <h2>Артём</h2>
                     <div class="more"></div>
+                    <div class="popupInfo">
+                    	<p>Доп инфа</p>
+                    </div>
                 </div>
                 <div class="num" id="Sava">
                     <h2>Сава</h2>
                     <div class="more"></div>
+                    <div class="popupInfo">
+                    	<p>Доп инфа</p>
+                    </div>
                 </div>
             </div>
             <div class="rndButton" id="bonuses">
