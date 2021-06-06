@@ -1,9 +1,4 @@
-let popup = document.getElementById("Eugene1"),
-	popupClose = document.getElementById("closeBtn"),
-	popupInfo = document.getElementById("popupInfo");
-popup.onclick = function(){
-	popupInfo.style.display = "block";
-};
-popupClose.onclick = function(){
-	popupInfo.style.display = "none";
-};
+const elements = document.querySelectorAll('.num');
+Array.from(elements).forEach((el)=> el.addEventListener('click', (e) => {
+	e.currentTarget.classList.toggle('active')
+}))

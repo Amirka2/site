@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
-    <title>Личный кабинет</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>Страница регистрации</title>
 </head>
 <body>
 	<div id="profile">
@@ -18,18 +16,22 @@
 			<div id="authorization">
 				<form>
 					<div id="registrationLink">
-						<p><a href="authorization.html">Регистрация</a></p>
+						<p><a href="profile.html">Авторизация</a></p>
 					</div>
 					<div id="loginAndPassword">
 						<div class="input">
-							<input id="userLogin" placeholder="Введите логин">
+							<input id="userLogin" placeholder="Придумайте логин">
 						</div>
 						
 						<div class="password">
-							<input type="password" id="userPassword" placeholder="Введите пароль" name="password">
+							<input type="password" id="userPassword" placeholder="Придумайте пароль" name="password">
 							<a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
 						</div>
-						<button type="submit">Войти</button>
+						<div class="password">
+							<input type="password" id="userPassword" placeholder="Повторите пароль" name="password">
+							<a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+						</div>
+						<button type="submit">Зарегистрироваться</button>
 					</div>
 				</form>	
 				<div id="info">

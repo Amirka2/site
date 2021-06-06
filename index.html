@@ -6,21 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-    <title>Розыгрыш</title>
+    <title>Главная страница</title>
 </head>
 <body>
  <header>
     <div class="content">
         <div class="navMenu">
-            <div class="menu"><img src="images/icons/menu2.svg" alt=""></div>
+            <div class="menu">
+            	<!--
+            	<a href="" class="menuIcon"><img src="images/icons/menu2.svg" alt="" class="menuIcon"></a>
+				-->
+            	<a href="profile.html" class="profileIcon"><img src="images/icons/profile.png" alt="" class="profileIcon"></a>
+            </div>
             <div id="navMenu">
                 <ul>
-                    <li><a href="index.html#info">Главное</a></li>
-                    <li><a href="index.html#getTicket">Играть</a></li>
-                    <li><a href="index.html#prizes">Призы</a></li>
-                    <li><a href="index.html#winners">Победители</a></li>
-                    <li><a href="index.html#bonuses">Бонусы</a></li>
-                    <li><a href="index.html#bottomcontacts">Контакты</a></li>
+                    <li id="mainLink"><a href="index.html#info">Главное</a></li>
+                    <li id="playLink"><a href="index.html#getTicket">Играть</a></li>
+                    <li id="prizesLink"><a href="index.html#prizes">Призы</a></li>
+                    <li id="winnersLink"><a href="index.html#winners">Победители</a></li>
+                    <li id="bonusesLink"><a href="index.html#bonuses">Бонусы</a></li>
+                    <li id="contactsLink"><a href="index.html#bottomcontacts">Контакты</a></li>
                 </ul>
             </div>
             <div class="profile"><a href="profile.html">Личный кабинет</a></div>
@@ -36,11 +41,11 @@
                         <div class="ref">
                         	<div>
                         		<img src="images/icons/vk.webp" alt="">
-                            <h2><a href="">VK</a></h2>
+                            <h2><a href="https://vk.com/feed">VK</a></h2>
                         	</div>
                             <div>
                             	<img src="images/icons/ic_email_24px_rounded.svg" alt="">
-                            <h2><a href="">89514666532@mail.ru</a></h2>
+                            <h2><a href="https://mail.ru">MAIL</a></h2>
                             </div>
                         </div>
                         <div class="text">
@@ -63,7 +68,7 @@
             	<p>Могут варьироваться в зависимости от количества билетов</p>
             	<div class="item">
                 <div class="name"><p><b>Количество билетов</b></p></div>
-                <div class="sum">
+                <div class="sum" id="itemHeader">
                 	<p><b>Выигрыш</b></p>
             	</div>
                 </div>
@@ -117,29 +122,46 @@
                 </div>
             </div>
             <div class="winnerList" id="winners">
-                <h1>Список пидорасов</h1>
-                <div class="num" id="Eugene1">
-                    <h2>Женя</h2>
-                    <div class="more"></div>
-                    <div id="popupInfo">
-                    	<p>Доп инфа</p>
+                <h1>Список победителей</h1>
+                <div class="num">
+                    <div class="mainInfo">
+                    	<h2>Женя</h2>
+                   		<div class="more"></div>
+                    </div>
+                    <div class="popupInfo">
+                    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil reprehenderit perspiciatis, doloremque! Unde cum et, esse velit vitae eius cupiditate atque voluptate aliquam repudiandae quas a sit incidunt beatae possimus laudantium recusandae sint neque magni voluptatum nihil accusantium distinctio. Repudiandae a vitae nihil possimus libero cupiditate hic non facilis.</p>
+                    	<div class="close"></div>
                     </div>
                 </div>
-                <div class="num" id="Eugene2">
-                    <h2>Женя</h2>
-                    <div class="more"></div>
+                <div class="num">
+                    <div class="mainInfo">
+                    	<h2>Амир</h2>
+                   		<div class="more"></div>
+                    </div>
+                    <div class="popupInfo">
+                    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil reprehenderit perspiciatis, doloremque! Unde cum et, esse velit vitae eius cupiditate atque voluptate aliquam repudiandae quas a sit incidunt beatae possimus laudantium recusandae sint neque magni voluptatum nihil accusantium distinctio. Repudiandae a vitae nihil possimus libero cupiditate hic non facilis.</p>
+                    	<div class="close"></div>
+                    </div>
                 </div>
-                <div class="num" id="Amir">
-                    <h2>Амир</h2>
-                    <div class="more"></div>
+                <div class="num">
+                    <div class="mainInfo">
+                    	<h2>Сава</h2>
+                   		<div class="more"></div>
+                    </div>
+                    <div class="popupInfo">
+                    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil reprehenderit perspiciatis, doloremque! Unde cum et, esse velit vitae eius cupiditate atque voluptate aliquam repudiandae quas a sit incidunt beatae possimus laudantium recusandae sint neque magni voluptatum nihil accusantium distinctio. Repudiandae a vitae nihil possimus libero cupiditate hic non facilis.</p>
+                    	<div class="close"></div>
+                    </div>
                 </div>
-                <div class="num" id="Artem">
-                    <h2>Артём</h2>
-                    <div class="more"></div>
-                </div>
-                <div class="num" id="Sava">
-                    <h2>Сава</h2>
-                    <div class="more"></div>
+                <div class="num">
+                    <div class="mainInfo">
+                    	<h2>Артем</h2>
+                   		<div class="more"></div>
+                    </div>
+                    <div class="popupInfo">
+                    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil reprehenderit perspiciatis, doloremque! Unde cum et, esse velit vitae eius cupiditate atque voluptate aliquam repudiandae quas a sit incidunt beatae possimus laudantium recusandae sint neque magni voluptatum nihil accusantium distinctio. Repudiandae a vitae nihil possimus libero cupiditate hic non facilis.</p>
+                    	<div class="close"></div>
+                    </div>
                 </div>
             </div>
             <div class="rndButton" id="bonuses">
@@ -177,10 +199,10 @@
                 <h1>Контакты</h1>
                 <div class="flexcontacts">
                     <div class="number">
-                        <h2><a href="">VK</a></h2>
+                        <h2><a href="https://vk.com/feed">VK</a></h2>
                     </div>
                     <div class="mail">
-                        <h2><a href="">89514666532@mail.ru</a></h2>
+                        <h2><a href="https://mail.ru">MAIL</a></h2>
                     </div>
                 </div>
             </div>
