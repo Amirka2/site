@@ -1,0 +1,232 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'lotteryapp/main.css' %}">
+    <title>Главная страница</title>
+</head>
+<body>
+<header>
+    <div class="content">
+        <div class="navMenu">
+            <div class="menu">
+                <!--
+                <a href="" class="menuIcon"><img src="images/icons/menu2.svg" alt="" class="menuIcon"></a>
+                -->
+                <a href="{% url 'login' %}" class="profileIcon"><img src="images/icons/profile.png" alt=""
+                                                                class="profileIcon"></a>
+            </div>
+            <div id="navMenu">
+                <ul>
+                    <li id="mainLink"><a href="{% url 'index' %}#info">Главное</a></li>
+                    <li id="playLink"><a href="{% url 'index' %}#getTicket">Играть</a></li>
+                    <li id="prizesLink"><a href="{% url 'index' %}#prizes">Призы</a></li>
+                    <li id="winnersLink"><a href="{% url 'index' %}#winners">Победители</a></li>
+                    <li id="bonusesLink"><a href="{% url 'index' %}#bonuses">Бонусы</a></li>
+                    <li id="contactsLink"><a href="{% url 'index' %}#bottomcontacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="profile"><a href="{% url 'lk' %}">Личный кабинет</a></div>
+        </div>
+    </div>
+</header>
+<div class="main">
+    <div class="content">
+        <div class="info" id="info">
+            <h1>Розыгрыш</h1>
+            <div class="wrapper">
+                <div class="contacts">
+                    <div class="ref">
+                        <div>
+                            <img src="{% static 'lotteryapp/images/icons/vk.webp' %}" alt="">
+                            <h2><a href="https://vk.com/feed">VK</a></h2>
+                        </div>
+                        <div>
+                            <img src="{% static 'lotteryapp/images/icons/ic_email_24px_rounded.svg' %}" alt="">
+                            <h2><a href="https://mail.ru">MAIL</a></h2>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Everything you've ever dreamed about is possible to realise just at the moment you decided
+                            to win</p><br>
+                        <p>Время побеждать</p>
+                    </div>
+                </div>
+                <div class="svg"><img src="{% static 'lotteryapp/images/gifts.png' %}" alt=""></div>
+            </div>
+        </div>
+        <div id="getTicket">
+            <h1>Получить билет</h1>
+            <div class="wrapper">
+                <button>Нажми для выигрыша!</button>
+            </div>
+        </div>
+        <div class="prizesList" id="prizes">
+            <h1>Призы</h1>
+            <p>Могут варьироваться в зависимости от количества билетов</p>
+            <div class="item">
+                <div class="name"><p><b>Количество билетов</b></p></div>
+                <div class="sum" id="itemHeader">
+                    <p><b>Выигрыш</b></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>1 билет</p></div>
+                <div class="sum">
+                    <p>400 руб.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>2 билета</p></div>
+                <div class="sum">
+                    <p>800 руб.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>3 билета</p></div>
+                <div class="sum">
+                    <p>800 руб.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>4 билета</p></div>
+                <div class="sum">
+                    <p>800 руб.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>5-7 билетов</p></div>
+                <div class="sum">
+                    <p>от 1500 руб.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>10+ билетов</p></div>
+                <div class="sum">
+                    <p>от 2500 руб.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>15+ билетов</p></div>
+                <div class="sum">
+                    <p>от 3000 руб.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>Моментальная лотерея</p></div>
+                <div class="sum">
+                    <p>1000 руб.</p>
+                </div>
+            </div>
+        </div>
+        <div class="winnerList" id="winners">
+            <h1>Список победителей</h1>
+            <div class="num">
+                <div class="mainInfo">
+                    <h2>Женя</h2>
+                    <div class="more"></div>
+                </div>
+                <div class="popupInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil reprehenderit
+                        perspiciatis, doloremque! Unde cum et, esse velit vitae eius cupiditate atque voluptate aliquam
+                        repudiandae quas a sit incidunt beatae possimus laudantium recusandae sint neque magni
+                        voluptatum nihil accusantium distinctio. Repudiandae a vitae nihil possimus libero cupiditate
+                        hic non facilis.</p>
+                    <div class="close"></div>
+                </div>
+            </div>
+            <div class="num">
+                <div class="mainInfo">
+                    <h2>Амир</h2>
+                    <div class="more"></div>
+                </div>
+                <div class="popupInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil reprehenderit
+                        perspiciatis, doloremque! Unde cum et, esse velit vitae eius cupiditate atque voluptate aliquam
+                        repudiandae quas a sit incidunt beatae possimus laudantium recusandae sint neque magni
+                        voluptatum nihil accusantium distinctio. Repudiandae a vitae nihil possimus libero cupiditate
+                        hic non facilis.</p>
+                    <div class="close"></div>
+                </div>
+            </div>
+            <div class="num">
+                <div class="mainInfo">
+                    <h2>Сава</h2>
+                    <div class="more"></div>
+                </div>
+                <div class="popupInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil reprehenderit
+                        perspiciatis, doloremque! Unde cum et, esse velit vitae eius cupiditate atque voluptate aliquam
+                        repudiandae quas a sit incidunt beatae possimus laudantium recusandae sint neque magni
+                        voluptatum nihil accusantium distinctio. Repudiandae a vitae nihil possimus libero cupiditate
+                        hic non facilis.</p>
+                    <div class="close"></div>
+                </div>
+            </div>
+            <div class="num">
+                <div class="mainInfo">
+                    <h2>Артем</h2>
+                    <div class="more"></div>
+                </div>
+                <div class="popupInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil reprehenderit
+                        perspiciatis, doloremque! Unde cum et, esse velit vitae eius cupiditate atque voluptate aliquam
+                        repudiandae quas a sit incidunt beatae possimus laudantium recusandae sint neque magni
+                        voluptatum nihil accusantium distinctio. Repudiandae a vitae nihil possimus libero cupiditate
+                        hic non facilis.</p>
+                    <div class="close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rndButton" id="bonuses">
+            <h1>Бонусы на кнопке рандома</h1>
+            <div class="item">
+                <div class="name"><p>Веселый тикток</p></div>
+                <div class="sum">
+                    <p>Бесплатно</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>Погода</p></div>
+                <div class="sum">
+                    <p>Бесплатно</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name"><p>Полезный лайфхак</p></div>
+                <div class="sum">
+                    <p>Бесплатно</p>
+                </div>
+            </div>
+        </div>
+        <div class="bio">
+            <h1>О нас</h1>
+            <div class="wrapper">
+                <div class="mainLogo"></div>
+                <div class="text">
+                    <p><b>Мы лучшие!!!</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bottomcontacts" id="bottomcontacts">
+            <h1>Контакты</h1>
+            <div class="flexcontacts">
+                <div class="number">
+                    <h2><a href="https://vk.com/feed">VK</a></h2>
+                </div>
+                <div class="mail">
+                    <h2><a href="https://mail.ru">MAIL</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'lotteryapp/js/script.js' %}"></script>
+</body>
+</html>
