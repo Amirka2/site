@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'lotteryapp/main.css' %}">
+    <title>Личный кабинет</title>
+</head>
+<body>
+<div id="profile">
+    <div class="main">
+        <div class="content">
+            <div id="getToMain">
+                <a href="{% url 'index' %}">Вернуться на главную</a>
+            </div>
+            <div id="LK">
+                <div class="privateInfo">
+                    <ul>
+                        <li><h3>Интересная информация</h3></li>
+                        <li>id:</li>
+                        <li>Привязанный номер телефона:</li>
+                        <li>Количество билетов:</li>
+                    </ul>
+                    <p>У нас на сайте вы можете получать билеты за просмотр рекламных роликов. За эти билеты можно
+                        участвовать в розыгрышах или моментальных лотереях.</p>
+                </div>
+                <div class="main">
+                    <h2>На повестке дня:</h2>
+                </div>
+                <div class="getHrefFromLK">
+                    <div id="tickets">
+                        <a href="{% url 'index' %}#getTicket">Получить билет</a><img src="images/icons/tickets.png" alt="">
+                    </div>
+                    <div id="tiktoks">
+                        <a href="">Получить тикток</a><img src="images/icons/tiktok.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,768 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Thin', sans-serif;
+}
+p {
+    line-height: 30px;
+}
+body {
+    background-image: url('images/bg.svg');
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Roboto Thin', sans-serif;
+}
+
+
+/* AUTHORIZATION */
+
+#getToMain {
+    height: 50px;
+    width: 166px;
+    padding: 20px 40px 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#authorization {
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#registrationLink {
+    text-align: center;
+}
+#profile a {
+    color: grey;
+}
+#profile a:hover {
+    color: #6a8dc3;
+}
+#loginAndPassword {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#loginAndPassword label {
+    width: 70px;
+}
+#loginAndPassword input {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+#loginAndPassword input:focus {
+    background-color: #DDF5FF;
+    border: 2px solid black;
+}
+#loginAndPassword button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #DDF5FF;
+    border-radius: 5px;
+}
+#loginAndPassword button:hover {
+    background-color: #6a8dc3;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.input#passwordInput {
+    display: flex;
+    flex-direction: column;
+}
+#passwordInput label {
+    width: 93%;
+}
+#passView {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+}
+#passView input {
+    width: 7%;
+}
+.password {
+    margin-bottom: 10px;
+}
+.passwrod-control a {
+    width: 10px;
+    height: 10px;
+}
+
+
+/* LK */
+
+#LK {
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#LK .privateInfo {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px 0 10px 0;
+    border-top: 0px;
+    border-left: 0px;
+}
+#LK .privateInfo li {
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+}
+#LK .privateInfo p {
+    padding: 0 10px;
+    line-height: 1.6em;
+}
+#LK .main {
+    width: 450px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#LK .main h2 {
+    text-align: center;
+    padding: 10px;
+}
+#LK .getHrefFromLK {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#LK #tickets {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 0 10px 0 10px;
+    border-top: 0px;
+    border-right: 0px;
+}
+#LK .getHrefFromLK a {
+    display: inline-block;
+    padding: 10px;
+}
+#LK #tickets img {
+    height: 150px;
+    width: 150px;
+}
+#LK #tickets , #LK #tiktoks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#LK #tiktoks {
+    height: 280px;
+    border: 1px solid black;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 10px;
+}
+
+/* NAVMENU */
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 6px 7px 0px rgba(0, 0, 0, .35);
+    position: fixed;
+    top: 0;
+}
+.content {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+div.navMenu  {
+    height: 100px;
+}
+.navMenu .menu {
+    display: none;
+    height: 50px;
+    width: 100%;
+}
+.navMenu .menu img {
+    height: 50px;
+    width: 50px;
+}
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navMenu {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+#navMenu #menu {
+    display: none;
+}
+#navMenu ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#navMenu li {
+    height: 100%;
+    width: 16.6%;
+    list-style: none;
+    flex-basis: 800px;
+}
+#navMenu a {
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navMenu a:hover, .profile a:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#mainLink {
+    flex-shrink: 1.05;
+}
+#playLink {
+    flex-shrink: 1.05;
+}
+#prizesLink {
+    flex-shrink: 1.05;
+}
+#winnersLink {
+    flex-shrink: 1;
+}
+#bonusesLink {
+    flex-shrink: 1.05;
+}
+#contactsLink {
+    flex-shrink: 1.04;
+}
+.profile {
+    height: 100%;
+    width: 20%;
+    color: #6a8dc3;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+}
+header .profile a {
+    color: #6a8dc3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.profile img {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: .5s linear;
+}
+.menu a {
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.profileIcon a {
+    float: right;
+}
+
+
+
+/* MAIN */
+
+.info {
+    margin-top: 150px;
+}
+.content h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.info .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.info div {
+    flex-basis: 50%;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contacts .ref, .contacts .mail {
+    display: flex;
+    flex-direction: column;
+}
+.ref div {
+    display: flex;
+    flex-direction: row;
+}
+.contacts img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.contacts h2 {
+    width: 460px;
+}
+.mail {
+    display: flex;
+    align-items: center;
+    color: #6a8dc3;
+}
+.contacts .profile {
+    margin-bottom: 30px;
+    padding: 0;
+    height: 100px;
+}
+.contacts .mail {
+    padding: 0;
+    height: 100px;
+}
+
+
+
+/* TICKETS */
+
+#getTicket .wrapper {
+    display: flex;
+    padding: 60px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    border-radius: 30px;
+    background-color: #fff;
+}
+#getTicket button {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#getTicket button:hover {
+    font-weight: 540;
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.2), 0 0 7px 7px rgba(0,0,0,0.2);
+}
+
+
+/* WINNERS */
+
+.winnerList a {
+    font-family: 'Roboto Thin', sans-serif;
+}
+.winnerList .num {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+    height: 35px;
+}
+.mainInfo {
+    display: flex;
+    justify-content: space-between;
+}
+.winnerList .num:hover {
+    box-shadow: 0 0 30px 30px rgba(0,0,0,0.2), 0 0 10px 10px rgba(0,0,0,0.2);
+}
+.num.active {
+    height: 200px;
+}
+.num.active .popupInfo {
+    display: block;
+}
+.num.active .more {
+    display: none;
+}
+.winnerList h2 {
+    margin-top: 7px;
+}
+.more {
+    background-image: url(../../../../../OneDrive/Рабочий стол/site-main/images/icons/ic_expand_more_24px_rounded.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+}
+.close {
+    background-image: url(../../../../../OneDrive/Рабочий стол/site-main/images/icons/ic_expand_more_24px_rounded.svg);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    float: right;
+}
+.popupInfo {
+    display: none;
+    height: 100px;
+    width: 100%;
+    margin: 15px 0;
+}
+#popupInfo1 {
+    display: none;
+    height: 200px;
+    width: 100%;
+}
+
+
+/* PRIZES */
+
+.prizesList p {
+    margin-bottom: 30px;
+}
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.item p {
+    padding: 15px;
+    margin-bottom: 0;
+}
+.name , .sum {
+    box-shadow: 0 14px 10px rgba(0,0,0,0.1), 0 14px 10px rgba(0,0,0,0.1);
+}
+.name {
+    background-color: #fff;
+    width: 850px;
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 8px 0px 0px 8px;
+}
+.sum {
+    background-color: #fff;
+    width: 150px;
+    text-align: center;
+    padding: 0;
+    border-radius: 0px 8px 8px 0px;
+}
+.prizesList h2 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+.item {
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    }
+.item .name , .item .sum {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    }
+.item .name , .item .sum {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.item .name , .priceitem .sum {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.item .sum {
+    min-width: 69px;
+}
+.item p {
+    font-size: 13px;
+}
+
+
+/* BIO */
+
+.bio {
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bio .wrapper {
+    background-color: #fff;
+    display: flex;
+    padding: 60px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 30px;
+}
+.bio .wrapper .mainLogo {
+    width: 230px;
+    height: 230px;
+    background-image: url(../../../../../OneDrive/Рабочий стол/site-main/images/icons/logo.png);
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin: 0 auto;
+}
+.bio .wrapper .text {
+    width: 65%;
+}
+.bio .wrapper .text h2 {
+    margin-bottom: 30px;
+}
+.wrapper .svg {
+    background-repeat: repeat-x;
+}
+
+
+/* FOOTER */
+
+.bottomcontacts {
+    margin-bottom: 100px;
+}
+.bottomcontacts h1 {
+    margin-top: 100px;
+}
+.flexcontacts {
+    display: flex;
+    justify-content: right;
+}
+.flexcontacts div {
+    margin-right: 30px;
+}
+
+
+/* ADAPTIVE DESIGN */
+
+@media (max-width: 1030px) and (min-width: 790px){
+    .navMenu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .navMenu .menu {
+        display: block;
+        width: 7%;
+    }
+    .navMenu .menu .menuIcon {
+        display: none;
+    }
+    .navMenu .menu .profileIcon {
+        float: right;
+    }
+    header .profile a {
+        display: none;
+    }
+    .navMenu .profile {
+        display: none;
+    }
+    #navMenu {
+        width: 93%;
+    }
+    .info {
+        margin-top: 130px;
+    }
+    .bio .wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    .bio .wrapper .text {
+        margin-top: 20px;
+    }
+    .info .contacts {
+        padding: 10px;
+    }
+}
+@media (max-width: 789px) and (min-width: 610px) {
+    .navMenu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navMenu .menu {
+        display: block;
+        width: 8.2%;
+    }
+    .navMenu .menu .menuIcon {
+        display: none;
+    }
+    .navMenu .menu .profileIcon {
+        float: right;
+    }
+    #navMenu {
+        width: 92.8%;
+    }
+    .navMenu .profile {
+        display: none;
+    }
+    header .profile a {
+        display: none;
+    }
+    .num.active {
+        height: 230px;
+    }
+    .num.active .popupInfo p {
+        line-height: 1.5em;
+    }
+    .info {
+        margin-top: 130px;
+    }
+    .bio .wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    .bio .wrapper .text {
+        margin-top: 20px;
+    }
+    .info .contacts {
+        padding: 10px;
+    }
+}
+@media (max-width: 609px) and (min-width: 320px) {
+    .main h1 {
+        font-size: 32px ;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .main h2 {
+        font-size: 18px;
+    }
+    .main p {
+        font-size: 14px;
+    }
+    .navMenu .menu {
+        display: block;
+        margin-left: 10px;
+    }
+    .navMenu .menu .profileIcon {
+        float: right;
+    }
+    #navMenu ul, #navMenu {
+        display: none;
+    }
+    .navMenu .profile {
+        display: none;
+    }
+    .num.active {
+        height: 210px;
+        font-size: 12px;
+        line-height: 0.3em;
+    }
+    .num.active .popupInfo p{
+        line-height: 1.2em;
+    }
+    .num.active .close {
+        margin: 0;
+    }
+    .info {
+        margin-top: 130px;
+    }
+    .bio .wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    .bio .wrapper .text {
+        margin-top: 20px;
+    }
+    .info .contacts {
+        padding: 10px;
+    }
+    .info .svg {
+        display: none;
+    }
+    .prizesList #itemHeader p {
+        padding: 2px;
+    }
+    .winnerList .num {
+        padding: 30px;
+    }
+    .winnerList .num h2 {
+        font-size: 16px;
+        max-width: 80%;
+    }
+    .prizesList {
+        margin-bottom: 0;
+    }
+    .rndButton .sum p {
+        font-size: 13px;
+        padding: 2px;
+    }
+    .bottomcontacts h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .bottomcontacts {
+        margin-bottom: 20px;
+    }
+    .flexcontacts {
+        flex-direction: column;
+    }
+    .flexcontacts div {
+        width: 100%;
+        min-width: 225px;
+    }
+}
+@media (max-width: 610px) and (min-width: 400px) {
+    .num.active .popupInfo p {
+        line-height: 1.7em;
+    }
+}
+@media (max-width: 319px) and (min-width: 100px) {
+    .main {
+        display: none;
+    }
+    .menu, #navMenu, .profile {
+        display: none;
+    }
+    .navMenu {
+        display: flex;
+        background: url(images/пасхалка.png);
+        background-size: contain;
+    }
+}

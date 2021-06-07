@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'lotteryapp/main.css' %}">
+    <title>Страница регистрации</title>
+</head>
+<body>
+<div id="profile">
+    <div class="main">
+        <div class="content">
+            <div id="getToMain">
+                <a href="{% url 'index' %}">Вернуться на главную</a>
+            </div>
+            <div id="authorization">
+                <div id="registrationLink">
+                    <p><a href="{% url 'login' %}">Авторизация</a></p>
+                </div>
+                <div id="loginAndPassword">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                        <button type="submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+                <div id="info">
+                    <p><a href="">Лицензионное соглашение</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
